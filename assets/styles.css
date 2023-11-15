@@ -1,0 +1,26 @@
+/* styles.css */
+.scroll-left {
+    white-space: nowrap;
+    overflow-x: scroll;
+    animation: scroll-left 20s linear infinite;
+}
+
+/* Move it (define the animation) */
+@keyframes scroll-left {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+/* radio button horizontal space */
+.radio-items {
+  display: inline-flex;
+  justify-content: space-between;
+  margin: 5px 0px 0px 0px;
+}
+
+.radio-item {
+  margin-right: 5px;
+}
