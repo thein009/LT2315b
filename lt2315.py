@@ -315,4 +315,4 @@ def update_template(theme, color_mode_switch_on):
 
 
 if __name__ == "__main__":
-    app.run_server(host="0.0.0.0", port=80815, debug=False)
+    app.run_server(host="0.0.0.0", port=2319, debug=False)
