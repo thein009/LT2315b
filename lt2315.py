@@ -30,7 +30,7 @@ def update_dat(data_file, csv_file):
 
 
 def update_latest(csv_file1):
-    update_dat(dat_file1, csv_fil1e)
+    update_dat(dat_file1, csv_file1)
     df = pd.read_csv(csv_file1, na_values=['NAN'])
     df['TimeStamp'] = pd.to_datetime(df['TimeStamp']).dt.strftime("%Y-%m-%d %H:%M")
     last_row = df.iloc[-1]
