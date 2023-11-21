@@ -10,6 +10,6 @@ COPY . ./
 # Install production dependencies.
 RUN pip install -r requirements.txt
 
-EXPOSE 80815
+EXPOSE 2319
 
 CMD python app.py
