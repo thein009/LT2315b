@@ -29,9 +29,9 @@ def update_dat(data_file, csv_file):
     n_file.close()
 
 
-def update_latest(csv_file):
-    update_dat(dat_file, csv_file)
-    df = pd.read_csv(csv_file, na_values=['NAN'])
+def update_latest(csv_file1):
+    update_dat(dat_file1, csv_fil1e)
+    df = pd.read_csv(csv_file1, na_values=['NAN'])
     df['TimeStamp'] = pd.to_datetime(df['TimeStamp']).dt.strftime("%Y-%m-%d %H:%M")
     last_row = df.iloc[-1]
     load_kN = f'{last_row[4]:.0f}'
