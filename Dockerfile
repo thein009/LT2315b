@@ -12,4 +12,4 @@ RUN pip install -r requirements.txt
 
 EXPOSE 2319
 
-CMD python app.py
+CMD python lt2315.py
