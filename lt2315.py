@@ -279,6 +279,7 @@ def download_data2_callback(n_clicks):
 def update_date_time(n_intervals):
     now = datetime.datetime.now()
     date_time = now.strftime('%Y-%m-%d %H:%M:%S')
+    date_time = date_time + " (GMT)"
     return date_time
 
 # updates the Bootstrap global light/dark color mode
